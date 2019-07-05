@@ -1,0 +1,51 @@
+object Form1: TForm1
+  Left = 1520
+  Height = 240
+  Top = 250
+  Width = 320
+  Caption = 'Form1'
+  ClientHeight = 240
+  ClientWidth = 320
+  object btnCriarBase: TButton
+    Left = 80
+    Height = 33
+    Top = 71
+    Width = 128
+    Caption = 'Criar base'
+    OnClick = btnCriarBaseClick
+    TabOrder = 0
+  end
+  object btnIniciarServidor: TButton
+    Left = 72
+    Height = 33
+    Top = 128
+    Width = 128
+    Caption = 'Iniciar Servidor'
+    OnClick = btnIniciarServidorClick
+    TabOrder = 1
+  end
+  object Button1: TButton
+    Left = 217
+    Height = 25
+    Top = 151
+    Width = 75
+    Caption = 'Button1'
+    OnClick = Button1Click
+    TabOrder = 2
+  end
+  object ZConnection1: TZConnection
+    ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = False
+    Properties.Strings = (
+      'AutoEncodeStrings='
+    )
+    HostName = 'localhost'
+    Port = 15432
+    Database = 'momot'
+    User = 'postgres'
+    Password = 'Postgres2019!'
+    Protocol = 'postgresql'
+    Left = 64
+    Top = 192
+  end
+end

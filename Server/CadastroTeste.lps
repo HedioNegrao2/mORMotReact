@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="11"/>
+    <BuildModes Active="Default"/>
+    <Units Count="11">
+      <Unit0>
+        <Filename Value="CadastroTeste.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="26"/>
+        <UsageCount Value="26"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="principal.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Principal"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="51"/>
+        <CursorPos X="91" Y="51"/>
+        <UsageCount Value="26"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="dao.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="DAO"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="14" Y="22"/>
+        <UsageCount Value="26"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="../mORMot/SynLog.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="610"/>
+        <CursorPos X="14" Y="624"/>
+        <UsageCount Value="10"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="../mORMot/SynCommons.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="7601"/>
+        <CursorPos X="14" Y="7602"/>
+        <UsageCount Value="10"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="../mORMot/SynSQLite3.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="3967"/>
+        <CursorPos Y="3983"/>
+        <UsageCount Value="10"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="../mORMot/SQLite3/mORMotHttpServer.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="694"/>
+        <CursorPos Y="708"/>
+        <UsageCount Value="10"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="../mORMot/SynCrtSock.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="7047"/>
+        <CursorPos Y="7063"/>
+        <UsageCount Value="10"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="../mORMot/SynDB.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1707"/>
+        <CursorPos X="19" Y="1725"/>
+        <UsageCount Value="10"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="../mORMot/SynDBZeos.pas"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="194"/>
+        <CursorPos X="17" Y="218"/>
+        <UsageCount Value="12"/>
+        <Loaded Value="True"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="../../../fpcupdeluxe/config_lazarus/onlinepackagemanager/packages/zeosdbo/src/dbc/ZDbcPostgreSqlUtils.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="695"/>
+        <CursorPos Y="710"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit10>
+    </Units>
+    <JumpHistory Count="28" HistoryIndex="27">
+      <Position1>
+        <Filename Value="principal.pas"/>
+        <Caret Line="71" Column="62" TopLine="42"/>
+      </Position1>
+      <Position2>
+        <Filename Value="principal.pas"/>
+        <Caret Line="50" Column="26" TopLine="34"/>
+      </Position2>
+      <Position3>
+        <Filename Value="principal.pas"/>
+        <Caret Line="78" TopLine="53"/>
+      </Position3>
+      <Position4>
+        <Filename Value="principal.pas"/>
+        <Caret Line="75" Column="57" TopLine="53"/>
+      </Position4>
+      <Position5>
+        <Filename Value="principal.pas"/>
+        <Caret Line="78" TopLine="53"/>
+      </Position5>
+      <Position6>
+        <Filename Value="CadastroTeste.lpr"/>
+        <Caret Line="11" Column="35"/>
+      </Position6>
+      <Position7>
+        <Filename Value="CadastroTeste.lpr"/>
+        <Caret Line="8" Column="11"/>
+      </Position7>
+      <Position8>
+        <Filename Value="principal.pas"/>
+        <Caret Line="15" Column="33"/>
+      </Position8>
+      <Position9>
+        <Filename Value="principal.pas"/>
+        <Caret Line="28" Column="20" TopLine="13"/>
+      </Position9>
+      <Position10>
+        <Filename Value="principal.pas"/>
+        <Caret Line="79" Column="18" TopLine="53"/>
+      </Position10>
+      <Position11>
+        <Filename Value="principal.pas"/>
+        <Caret Line="10" Column="19" TopLine="5"/>
+      </Position11>
+      <Position12>
+        <Filename Value="principal.pas"/>
+        <Caret Line="67" Column="52" TopLine="61"/>
+      </Position12>
+      <Position13>
+        <Filename Value="principal.pas"/>
+        <Caret Line="70" Column="55" TopLine="61"/>
+      </Position13>
+      <Position14>
+        <Filename Value="dao.pas"/>
+        <Caret Line="22" Column="14"/>
+      </Position14>
+      <Position15>
+        <Filename Value="principal.pas"/>
+        <Caret Line="11" Column="15"/>
+      </Position15>
+      <Position16>
+        <Filename Value="principal.pas"/>
+        <Caret Line="62" Column="13" TopLine="53"/>
+      </Position16>
+      <Position17>
+        <Filename Value="principal.pas"/>
+        <Caret Line="10" Column="8"/>
+      </Position17>
+      <Position18>
+        <Filename Value="principal.pas"/>
+        <Caret Line="57" Column="30" TopLine="43"/>
+      </Position18>
+      <Position19>
+        <Filename Value="principal.pas"/>
+        <Caret Line="10" Column="19"/>
+      </Position19>
+      <Position20>
+        <Filename Value="../mORMot/SynDBZeos.pas"/>
+        <Caret Line="118" Column="5" TopLine="103"/>
+      </Position20>
+      <Position21>
+        <Filename Value="../mORMot/SynDBZeos.pas"/>
+        <Caret Line="4" Column="15"/>
+      </Position21>
+      <Position22>
+        <Filename Value="../mORMot/SynDBZeos.pas"/>
+        <Caret Line="120" Column="33" TopLine="103"/>
+      </Position22>
+      <Position23>
+        <Filename Value="dao.pas"/>
+        <Caret Line="22" Column="14"/>
+      </Position23>
+      <Position24>
+        <Filename Value="principal.pas"/>
+        <Caret Line="62" Column="20"/>
+      </Position24>
+      <Position25>
+        <Filename Value="principal.pas"/>
+        <Caret Line="76" Column="104" TopLine="56"/>
+      </Position25>
+      <Position26>
+        <Filename Value="principal.pas"/>
+        <Caret Line="101" Column="25" TopLine="99"/>
+      </Position26>
+      <Position27>
+        <Filename Value="principal.pas"/>
+        <Caret Line="29" Column="24" TopLine="14"/>
+      </Position27>
+      <Position28>
+        <Filename Value="principal.pas"/>
+        <Caret Line="65" Column="63" TopLine="51"/>
+      </Position28>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="0" ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>
