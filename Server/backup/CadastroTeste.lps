@@ -18,8 +18,9 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Principal"/>
-        <TopLine Value="152"/>
-        <CursorPos X="31" Y="172"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="116"/>
+        <CursorPos X="52" Y="138"/>
         <UsageCount Value="49"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -176,12 +177,10 @@
       </Unit22>
       <Unit23>
         <Filename Value="../../../../Dev/mORMot/SQLite3/mORMotHttpServer.pas"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="1"/>
-        <TopLine Value="480"/>
-        <CursorPos X="19" Y="395"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="912"/>
+        <CursorPos Y="923"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
       </Unit23>
       <Unit24>
         <Filename Value="../../../../Dev/mORMot/SynCrtSock.pas"/>
@@ -191,7 +190,7 @@
         <UsageCount Value="10"/>
       </Unit24>
     </Units>
-    <JumpHistory Count="19" HistoryIndex="18">
+    <JumpHistory Count="14" HistoryIndex="13">
       <Position1>
         <Filename Value="principal.pas"/>
         <Caret Line="123" Column="48" TopLine="120"/>
@@ -248,26 +247,6 @@
         <Filename Value="principal.pas"/>
         <Caret Line="124" Column="6" TopLine="114"/>
       </Position14>
-      <Position15>
-        <Filename Value="principal.pas"/>
-        <Caret Line="138" Column="69" TopLine="59"/>
-      </Position15>
-      <Position16>
-        <Filename Value="principal.pas"/>
-        <Caret Line="75" Column="24" TopLine="57"/>
-      </Position16>
-      <Position17>
-        <Filename Value="principal.pas"/>
-        <Caret Line="74" Column="10" TopLine="57"/>
-      </Position17>
-      <Position18>
-        <Filename Value="principal.pas"/>
-        <Caret Line="36" Column="28" TopLine="15"/>
-      </Position18>
-      <Position19>
-        <Filename Value="principal.pas"/>
-        <Caret Line="172" Column="31" TopLine="152"/>
-      </Position19>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>

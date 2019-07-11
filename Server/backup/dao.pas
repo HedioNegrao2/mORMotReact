@@ -11,16 +11,11 @@ uses
 
 type
 
- { TSQLGrupo }
-
  TSQLGrupo = class(TSQLRecord)
   private
-    FAtivo: Boolean;
    FCodigo: RawUTF8;
-   procedure SetAtivo(AValue: Boolean);
   published
     property Codigo:RawUTF8 read FCodigo write FCodigo;
-    property Ativo: Boolean read FAtivo write SetAtivo;
   end;
 
 
@@ -38,14 +33,6 @@ type
 
 
 implementation
-
-{ TSQLGrupo }
-
-procedure TSQLGrupo.SetAtivo(AValue: Boolean);
-begin
-  if FAtivo=AValue then Exit;
-  FAtivo:=AValue;
-end;
 
 end.
 
