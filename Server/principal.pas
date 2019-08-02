@@ -28,12 +28,16 @@ type
     procedure Button1Click(Sender: TObject);
   private
      FModeloDados: TSQLModel;
+     ModeloServicos:TSQLModel;
      FBaseDados: TSQLRestServerDB;
      FServidorHTTP: TSQLHttpServer;
+     ServidorServicos: TSQLRestServer;
+
 
      procedure ConfigurarLog;
      procedure InicializarBancoDeDados;
      procedure InicializarServidorHTTP;
+     procedure InicializarServicos;
 
 
 
@@ -52,7 +56,7 @@ implementation
 { TForm1 }
 
 uses
-  DAO,SynCrypto, SynEcc;
+  DAO,SynCrypto, SynEcc, uAutenricacaoJWT;
 
 procedure TForm1.btnIniciarServidorClick(Sender: TObject);
 begin
@@ -117,6 +121,7 @@ procedure TForm1.btnCriarBaseClick(Sender: TObject);
 begin
    ConfigurarLog;
   InicializarBancoDeDados;
+  InicializarServicos;
 end;
 
 procedure TForm1.btnCriarBase1ContextPopup(Sender: TObject; MousePos: TPoint;
@@ -168,8 +173,16 @@ end;
 
 procedure TForm1.InicializarServidorHTTP;
 begin
- // TOleDBMSSQL2005ConnectionProperties;
-  FServidorHTTP := TSQLHttpServer.Create('8081', [FBaseDados]);
+ // TOleDBMSSQL2005ConnectioçProperties;
+
+  FServidorHTTP := TSQLHttpServer.Create('8081', [FBaseDados,ServidorServicos]);
+end;
+
+procedure TForm1.InicializarServicos;
+begin
+  ModeloServicos := TSQLModel.Create([],'services');
+  ServidorServicos := TSQLRestServerFullMemory.Create(ModeloServicos);
+  ServidorServicos.ServiceRegister(TCalculadora,[TypeInfo(ICalculadora)], sicShared);
 end;
 
 end.

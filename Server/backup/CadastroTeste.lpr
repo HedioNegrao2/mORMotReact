@@ -9,7 +9,7 @@ uses
   Interfaces, // this includes the LCL widgetset
   mORMot,
   mORMotSQLite3, SynSQLite3Static,
-  Forms, zcomponent, Principal, DAO, SynCrtSock, uAutenricacaoJWT
+  Forms, zcomponent, Principal, DAO, SynCrtSock
   { you can add units after this };
 
 {$R *.res}
