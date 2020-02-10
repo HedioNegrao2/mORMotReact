@@ -7,9 +7,22 @@ interface
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, ZConnection,
   mORMotSQLite3, mORMot, mORMotHttpServer, SynCommons,SynSQLite3Static,
-  SynDB, SynDBZeos, SynOleDB, mORMotDB, Types;
+  SynDB, SynDBZeos, SynOleDB, mORMotDB, Types, SynCrypto,  uAutenricacaoJWT,
+   SynEcc;
 
 type
+
+  { TTesteServicos }
+
+  TTesteServicos = class( TSQLRestServerFullMemory)
+  private
+     fJWT: TJWTAbstract;
+  public
+        procedure  TesteJWT(Ctxt: TSQLRestServerURIContext);
+    procedure URI(var Call: TSQLRestURIParams); override;
+    procedure AfterConstruction; override;
+  end;
+
 
   { TForm1 }
 
@@ -31,7 +44,7 @@ type
      ModeloServicos:TSQLModel;
      FBaseDados: TSQLRestServerDB;
      FServidorHTTP: TSQLHttpServer;
-     ServidorServicos: TSQLRestServer;
+     ServidorServicos: TTesteServicos;
 
 
      procedure ConfigurarLog;
@@ -56,7 +69,37 @@ implementation
 { TForm1 }
 
 uses
-  DAO,SynCrypto, SynEcc, uAutenricacaoJWT;
+  DAO;
+
+{ TTesteServicos }
+
+procedure TTesteServicos.TesteJWT(Ctxt: TSQLRestServerURIContext);
+begin
+      if Ctxt.AuthenticationCheck(fJWT)  then
+    Ctxt.ReturnFileFromFolder('C:\JavaScript');
+end;
+
+procedure TTesteServicos.URI(var Call: TSQLRestURIParams);
+var
+  url: string;
+begin
+  inherited URI(Call);
+  url := call.Url;
+
+      if pos('services/calculadora.somar', url) > 0 then
+  begin
+       ShowMessage('Pode passar');
+
+      raise exception.create('Erro');
+  end;
+
+end;
+
+procedure TTesteServicos.AfterConstruction;
+begin
+  inherited AfterConstruction;
+  fJWT := TJWTHS256.Create('secret',0,[jrcSubject],[]);
+end;
 
 procedure TForm1.btnIniciarServidorClick(Sender: TObject);
 begin
@@ -156,11 +199,11 @@ end;
 
 procedure TForm1.InicializarBancoDeDados;
 var
-   Props :  TOleDBMSSQL2012ConnectionProperties ;
+   Props :  TOleDBMSSQL2008ConnectionProperties ;
 begin
     // Cria o modelo da base de dados contendo a classe/tabela
     // TSQLPessoa
- Props := TOleDBMSSQL2012ConnectionProperties.Create(  'NEGRAO-DEV', 'mORMot', 'sa', '');
+ Props := TOleDBMSSQL2008ConnectionProperties.Create(  '.', 'mORMot', 'sa', '');
  FModeloDados := TSQLModel.Create([TSQLGrupo,TSQLProduto]);
  VirtualTableExternalRegister(FModeloDados, [TSQLGrupo, TSQLProduto], Props);
  FBaseDados := TSQLRestServerDB.Create(FModeloDados, ':memory:');
@@ -175,13 +218,13 @@ procedure TForm1.InicializarServidorHTTP;
 begin
  // TOleDBMSSQL2005ConnectioçProperties;
 
-  FServidorHTTP := TSQLHttpServer.Create('8081', [FBaseDados]);
+  FServidorHTTP := TSQLHttpServer.Create('8081', [FBaseDados,ServidorServicos]);
 end;
 
 procedure TForm1.InicializarServicos;
 begin
   ModeloServicos := TSQLModel.Create([],'services');
-  ServidorServicos := TSQLRestServerFullMemory.Create(ModeloServicos);
+  ServidorServicos :=  TTesteServicos.Create(ModeloServicos);
   ServidorServicos.ServiceRegister(TCalculadora,[TypeInfo(ICalculadora)], sicShared);
 end;
 

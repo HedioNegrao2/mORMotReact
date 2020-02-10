@@ -64,9 +64,9 @@
       <Filename Value="CadastroTeste"/>
     </Target>
     <SearchPaths>
-      <IncludeFiles Value="$(ProjOutDir);D:/Dev/mORMot/;D:/Dev/mORMot/SQLite3/;D:/fpcupdeluxe/config_lazarus/onlinepackagemanager/packages/zeosdbo/src/"/>
-      <Libraries Value="D:/Dev/mORMot/static/$(TargetCPU)-$(TargetOS)/"/>
-      <OtherUnitFiles Value="D:/Dev/mORMot/SQLite3/;D:/Dev/mORMot/SQLite3/DDD/infra/;D:/fpcupdeluxe/config_lazarus/onlinepackagemanager/packages/zeosdbo/src/;D:/Dev/mORMot/"/>
+      <IncludeFiles Value="$(ProjOutDir);C:/fpcupdeluxe/lazarus/components/mORMot-master/;C:/fpcupdeluxe/lazarus/components/mORMot-master/SQLite3/;C:/fpcupdeluxe/lazarus/components/zeosdbo-7.2.4-stable/src/"/>
+      <Libraries Value="C:/fpcupdeluxe/lazarus/components/mORMot-master/static/$(TargetCPU)-$(TargetOS)/"/>
+      <OtherUnitFiles Value="C:/fpcupdeluxe/lazarus/components/mORMot-master/SQLite3/;C:/fpcupdeluxe/lazarus/components/mORMot-master/SQLite3/DDD/infra/;C:/fpcupdeluxe/lazarus/components/mORMot-master/;C:/fpcupdeluxe/lazarus/components/zeosdbo-7.2.4-stable/src/"/>
       <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
     <Linking>

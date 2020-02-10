@@ -1,57 +1,58 @@
 object Form1: TForm1
   Left = 1520
-  Height = 320
+  Height = 256
   Top = 250
-  Width = 641
+  Width = 513
   Caption = 'Form1'
-  ClientHeight = 320
-  ClientWidth = 641
-  DesignTimePPI = 120
+  ClientHeight = 256
+  ClientWidth = 513
+  LCLVersion = '2.1.0.0'
   object btnCriarBase: TButton
-    Left = 100
-    Height = 41
-    Top = 89
-    Width = 160
+    Left = 80
+    Height = 33
+    Top = 71
+    Width = 128
     Caption = 'Criar base SQL Server'
     OnClick = btnCriarBaseClick
     ParentFont = False
     TabOrder = 0
   end
   object btnIniciarServidor: TButton
-    Left = 104
-    Height = 41
-    Top = 208
-    Width = 160
+    Left = 83
+    Height = 33
+    Top = 166
+    Width = 128
     Caption = 'Iniciar Servidor'
     OnClick = btnIniciarServidorClick
     ParentFont = False
     TabOrder = 1
   end
   object Button1: TButton
-    Left = 100
-    Height = 48
-    Top = 148
-    Width = 160
+    Left = 80
+    Height = 38
+    Top = 118
+    Width = 128
     Caption = 'Criar  Base Postgres'
     OnClick = Button1Click
     ParentFont = False
     TabOrder = 2
   end
   object Memo1: TMemo
-    Left = 352
-    Height = 113
-    Top = 175
-    Width = 188
+    Left = 282
+    Height = 90
+    Top = 140
+    Width = 150
     Lines.Strings = (
       'Memo1'
     )
+    ParentFont = False
     TabOrder = 3
   end
   object btnCriarBase1: TButton
-    Left = 328
-    Height = 41
-    Top = 96
-    Width = 160
+    Left = 262
+    Height = 33
+    Top = 77
+    Width = 128
     Caption = 'Criar base SQL Server'
     OnClick = btnCriarBase1Click
     OnContextPopup = btnCriarBase1ContextPopup
@@ -70,7 +71,7 @@ object Form1: TForm1
     User = 'postgres'
     Password = 'Postgres2019!'
     Protocol = 'postgresql'
-    Left = 80
-    Top = 240
+    Left = 64
+    Top = 192
   end
 end
